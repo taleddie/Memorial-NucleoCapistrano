@@ -1,0 +1,304 @@
+/* RESET */
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:"Inter",sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+overflow-x:hidden;
+background:
+radial-gradient(circle 400px at 43% 15%, #ee7e33b0, transparent 60%),
+radial-gradient(circle 400px at 60% 10%, #067a3eb7, transparent 60%),
+#cacaca;
+min-height:100vh;
+}
+
+ul{list-style:none}
+a{text-decoration:none}
+
+img{
+max-width:100%;
+border-radius:40px;
+}
+
+/* HEADER */
+
+.headerCont{
+width:100vw;
+height:10vh;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:40px 5%;
+}
+
+.header a{
+position:relative;
+color:rgb(0, 0, 0);
+}
+
+.header a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-2px;
+width:0;
+height:1px;
+background:rgb(0, 0, 0);
+transition:.3s;
+}
+
+.header a:hover::after{
+width:100%;
+}
+
+.textCont{
+display:flex;
+gap:30px;
+}
+
+.text,
+.textCont img{
+height: 50px;
+}
+
+/* TITULO */
+
+.titleCont{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction: column;
+height:50vh;
+gap:10px;
+}
+
+.title1{
+color:rgb(0, 0, 0);
+font-size:90px;
+font-weight:500;
+font-family:"Monsieur La Doulaise",cursive;
+margin-left: -30px;
+text-shadow: -1px -1px 0 #cacaca,
+1px -1px 0 #cacaca,
+-1px 1px 0 #cacaca,
+1px 1px 0 #cacaca;
+;
+}
+
+.title2{
+color:rgb(0, 0, 0);
+font-size:30px;
+font-weight:400;
+font-family: "Inter",sans-serif;
+margin-top: -50px;
+}
+
+/* TEXTOS */
+
+p{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.subtitle{
+font-size: 50px !important;
+font-weight:700;
+font-family: "Monsieur La Doulaise",cursive;
+}
+
+span{
+font-weight:700;
+}
+
+.conteudoCont p{
+color:white;
+font-size:20px;
+font-weight:200;
+padding:5%;
+}
+
+/* CONTAINER */
+
+.conteudoCont{
+position:relative;
+display:flex;
+flex-direction:column;
+gap:20px;
+padding:40px;
+margin:50px auto 20px;
+max-width:1100px;
+border-radius:5%;
+cursor:pointer;
+}
+
+/* CARD ANIMATION */
+
+.conteudoCont>div{
+overflow:hidden;
+transition:max-height .5s,padding .5s;
+}
+
+.conteudoCont>div.active{
+max-height:100000px;
+padding-bottom:20px;
+}
+
+/* TEXTO ESCONDIDO */
+
+.textoEscondido{
+max-height:0;
+overflow:hidden;
+opacity:0;
+transition:opacity .3s .2s;
+}
+
+.conteudoCont>div.active .textoEscondido{
+opacity:1;
+max-height:100000px;
+}
+
+/* CORES */
+
+.conteudo1,.conteudo8{background:#ee7e33}
+.conteudo2,.conteudo9{background:#fff}
+.conteudo3,.conteudo10{background:#233D7F}
+.conteudo4,.conteudo11,.conteudo7{background:#067a3e}
+.conteudo5,.conteudo12{background:#B0D139}
+.conteudo6,.conteudo13{background:#919191}
+
+.conteudo2 p,
+.conteudo9 p,
+.conteudo5 p,
+.conteudo12 p{
+color:#000;
+}
+
+/* CARDS */
+
+.conteudo1,
+.conteudo2,
+.conteudo3,
+.conteudo4,
+.conteudo5,
+.conteudo6,
+.conteudo7,
+.conteudo8,
+.conteudo9,
+.conteudo10,
+.conteudo11,
+.conteudo12,
+.conteudo13{
+min-height:150px;
+border-radius:20px;
+width:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+color:#f1f1f1;
+padding:20px;
+font-size:14px;
+margin-top:60px;
+}
+
+.footer-container{
+max-width:800px;
+margin:auto;
+}
+
+/* DESKTOP */
+
+@media (min-width:720px){
+
+.title1{
+font-size:60px;
+}
+
+.subtitle{
+font-size:32px;
+}
+
+.conteudoCont{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+grid-template-rows:repeat(10,auto);
+gap:20px;
+padding:20px;
+}
+
+/* GRID */
+
+.conteudo1{grid-area:1/1/3/3}
+.conteudo2{grid-area:1/3/3/5}
+.conteudo3{grid-area:3/1/5/2}
+.conteudo4{grid-area:3/2/5/4}
+.conteudo5{grid-area:3/4/5/5}
+.conteudo6{grid-area:5/1/7/3}
+.conteudo7{grid-area:5/3/7/4}
+.conteudo8{grid-area:5/4/7/5}
+.conteudo9{grid-area:7/1/9/3}
+.conteudo10{grid-area:7/3/9/5}
+.conteudo11{grid-area:9/1/11/2}
+.conteudo12{grid-area:9/2/11/3}
+.conteudo13{grid-area:9/3/11/5}
+
+/* INTERAÇÃO */
+
+.conteudoCont>div{
+cursor:pointer;
+position:relative;
+transition:.5s cubic-bezier(.05,.61,.41,.95);
+opacity:.85;
+}
+
+.conteudoCont:has(.active)>div:not(.active){
+transform:scale(.9);
+opacity:.5;
+filter:blur(10px);
+}
+
+/* CARD ABERTO */
+
+.conteudo3.active,
+.conteudo5.active,
+.conteudo7.active,
+.conteudo8.active,
+.conteudo11.active,
+.conteudo12.active{
+    width: 200% !important; 
+}
+
+.conteudo5.active,
+.conteudo8.active{
+    left: -105% !important;
+}
+
+.conteudoCont>div.active{
+position:absolute;
+width:100%;
+max-width:900px;
+transform:scale(1.05);
+border-radius:20px;
+z-index:10;
+left:0;
+}
+
+}

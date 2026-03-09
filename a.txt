@@ -1,0 +1,3 @@
+verde escuro #067a3eb7
+v claro #B0D139
+laranja #ee7e33b0
