@@ -246,19 +246,18 @@ padding:20px;
 
 /* GRID */
 
-.conteudo1{grid-area:1/1/3/3}
-.conteudo2{grid-area:1/3/3/5}
-.conteudo3{grid-area:3/1/5/2}
-.conteudo4{grid-area:3/2/5/4}
-.conteudo5{grid-area:3/4/5/5}
-.conteudo6{grid-area:5/1/7/3}
-.conteudo7{grid-area:5/3/7/4}
-.conteudo8{grid-area:5/4/7/5}
-.conteudo9{grid-area:7/1/9/3}
-.conteudo10{grid-area:7/3/9/5}
-.conteudo11{grid-area:9/1/11/2}
-.conteudo12{grid-area:9/2/11/3}
-.conteudo13{grid-area:9/3/11/5}
+.conteudo1 { grid-area: 1 / 1 / 2 / 6; }
+.conteudo2 { grid-area: 2 / 1 / 3 / 2; }
+.conteudo3 { grid-area: 2 / 2 / 3 / 4; }
+.conteudo4 { grid-area: 2 / 4 / 3 / 5; }
+.conteudo5 { grid-area: 3 / 1 / 4 / 3; }
+.conteudo6 { grid-area: 3 / 3 / 4 / 4; }
+.conteudo7 { grid-area: 3 / 4 / 4 / 5; }
+.conteudo8 { grid-area: 4 / 1 / 5 / 3; }
+.conteudo9 { grid-area: 4 / 3 / 5 / 5; }
+.conteudo10 { grid-area: 5 / 1 / 6 / 2; }
+.conteudo11 { grid-area: 5 / 2 / 6 / 3; }
+.conteudo12 { grid-area: 5 / 3 / 6 / 5; }
 
 /* INTERAÇÃO */
 
@@ -277,17 +276,17 @@ filter:blur(10px);
 
 /* CARD ABERTO */
 
-.conteudo3.active,
-.conteudo5.active,
+.conteudo2.active,
+.conteudo4.active,
+.conteudo6.active,
 .conteudo7.active,
-.conteudo8.active,
-.conteudo11.active,
-.conteudo12.active{
+.conteudo10.active,
+.conteudo11.active{
     width: 200% !important; 
 }
 
-.conteudo5.active,
-.conteudo8.active{
+.conteudo4.active,
+.conteudo7.active{
     left: -105% !important;
 }
 
