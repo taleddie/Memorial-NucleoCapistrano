@@ -251,13 +251,12 @@ padding:20px;
 .conteudo3 { grid-area: 2 / 2 / 3 / 4; }
 .conteudo4 { grid-area: 2 / 4 / 3 / 5; }
 .conteudo5 { grid-area: 3 / 1 / 4 / 3; }
-.conteudo6 { grid-area: 3 / 3 / 4 / 4; }
-.conteudo7 { grid-area: 3 / 4 / 4 / 5; }
-.conteudo8 { grid-area: 4 / 1 / 5 / 3; }
-.conteudo9 { grid-area: 4 / 3 / 5 / 5; }
-.conteudo10 { grid-area: 5 / 1 / 6 / 2; }
-.conteudo11 { grid-area: 5 / 2 / 6 / 3; }
-.conteudo12 { grid-area: 5 / 3 / 6 / 5; }
+.conteudo6 { grid-area: 3 / 3 / 4 / 5; }
+.conteudo7 { grid-area: 4 / 1 / 5 / 3; }
+.conteudo8 { grid-area: 4 / 3 / 5 / 5; }
+.conteudo9 { grid-area: 5 / 1 / 6 / 2; }
+.conteudo10 { grid-area: 5 / 2 / 6 / 3; }
+.conteudo11 { grid-area: 5 / 3 / 6 / 5; }
 
 /* INTERAÇÃO */
 
@@ -278,15 +277,12 @@ filter:blur(10px);
 
 .conteudo2.active,
 .conteudo4.active,
-.conteudo6.active,
-.conteudo7.active,
-.conteudo10.active,
-.conteudo11.active{
+.conteudo9.active,
+.conteudo10.active{
     width: 200% !important; 
 }
 
-.conteudo4.active,
-.conteudo7.active{
+.conteudo4.active{
     left: -105% !important;
 }
 
