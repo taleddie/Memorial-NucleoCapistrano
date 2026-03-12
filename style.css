@@ -83,6 +83,11 @@ height:50vh;
 gap:10px;
 }
 
+.titleCont img{
+width: 100px;
+height: 100px;
+}
+
 .title1{
 color:rgb(0, 0, 0);
 font-size:90px;
