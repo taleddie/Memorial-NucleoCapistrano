@@ -6,7 +6,7 @@ The project features a modern Bento-Grid layout with smooth card expand/collapse
 
 ## Features
 
-- Dynamic Bento-Grid layout for organizing event categories and stages (2024–2025);
+- Dynamic Bento-Grid layout for organizing event categories and stages (2024–2026);
 - Click-to-expand card animations revealing hidden event imagery (`.textoEscondido`);
 - Automatic blur and scale focus effects on active cards (`:has(.active)`);
 - External click detection to auto-close expanded cards;
