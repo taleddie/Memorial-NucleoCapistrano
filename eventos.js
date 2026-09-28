@@ -71,7 +71,17 @@ const EVENTOS = [
         frase: "",
         cor: "laranja",
         tamanho: "grande",
-        fotos: numeradas(6)   // <- AQUI: coloque as fotos em img/evento-01/  (foto-01.png, foto-02.png ...)
+        fotos: [
+            { arquivo: "foto-01.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-02.jpg", legenda: " ", orientacao: "vertical" },
+            { arquivo: "foto-03.png", legenda: " ", orientacao: "vertical" },
+            { arquivo: "foto-04.jpg", orientacao: "vertical" },
+            { arquivo: "foto-05.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-06.jpg", legenda: " ", orientacao: "horizontal", foco: "50% 80%" },
+            { arquivo: "foto-07.jpg", legenda: " ", orientacao: "vertical" },
+            { arquivo: "foto-08.heic", legenda: " ", orientacao: "vertical" },
+            { arquivo: "foto-09.jpg", legenda: " ", orientacao: "vertical" }
+        ]
     },
     {
         pasta: "evento-02",
@@ -96,72 +106,105 @@ const EVENTOS = [
         titulo: "Amistosos",
         data: "",
         frase: "",
-        cor: "verde",
+        cor: "lima",
         tamanho: "pequeno",
         fotos: numeradas(6)   // <- AQUI: fotos em img/evento-04/
     },
     {
         pasta: "evento-05",
-        titulo: "Etapa Local",
-        data: "2025",
+        titulo: "Eventos Externos",
+        data: "",
         frase: "",
-        cor: "lima",
+        cor: "cinza",
+        tamanho: "pequeno",
+        fotos: numeradas(6)   // <- AQUI: fotos em img/evento-10/
+    },
+    {
+        pasta: "evento-06",
+        titulo: "Festivais de Férias",
+        data: "",
+        frase: "",
+        cor: "verde",
+        tamanho: "pequeno",
+        fotos: numeradas(6)   // <- AQUI: fotos em img/evento-11/
+    },
+    {
+        pasta: "evento-07",
+        titulo: "Etapa Final",
+        data: "2024",
+        frase: "",
+        cor: "branco",
+        tamanho: "medio",
+        fotos: numeradas(6)   // <- AQUI: fotos em img/evento-09/
+    },
+    {
+        pasta: "evento-08",
+        titulo: "Etapa Local",
+        data: "2024",
+        frase: "",
+        cor: "azul",
         tamanho: "medio",
         fotos: numeradas(6)   // <- AQUI: fotos em img/evento-05/
     },
     {
-        pasta: "evento-06",
+        pasta: "evento-09",
         titulo: "Etapa Regional",
-        data: "2025",
+        data: "2024",
         frase: "",
-        cor: "cinza",
+        cor: "lima",
         tamanho: "medio",
         fotos: numeradas(6)   // <- AQUI: fotos em img/evento-06/
     },
     {
-        pasta: "evento-07",
+        pasta: "evento-10",
         titulo: "Etapa Local",
-        data: "2024",
+        data: "2025",
         frase: "",
         cor: "verde",
         tamanho: "medio",
         fotos: numeradas(6)   // <- AQUI: fotos em img/evento-07/
     },
     {
-        pasta: "evento-08",
-        titulo: "Etapa Regional",   // (no site antigo estava escrito "Reginal"; corrigi para "Regional")
-        data: "2024",
+        pasta: "evento-11",
+        titulo: "Etapa Regional",
+        data: "2025",
         frase: "",
         cor: "laranja",
         tamanho: "medio",
         fotos: numeradas(6)   // <- AQUI: fotos em img/evento-08/
     },
     {
-        pasta: "evento-09",
+        pasta: "evento-12",
         titulo: "Etapa Final",
-        data: "2024",
+        data: "2025",
+        frase: "Adiada de 2025 para 2026.",
+        cor: "cinza",
+        tamanho: "medio",
+        fotos: [
+            { arquivo: "foto-01.jpg", legenda: "Núcleos Capistrano e Itaim Paulista", orientacao: "vertical" },
+            { arquivo: "foto-02.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-03.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-04.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-05.jpg", legenda: " ", orientacao: "vertical" }
+        ]
+    },
+    {
+        pasta: "evento-13",
+        titulo: "Etapa Local",
+        data: "2026",
         frase: "",
         cor: "branco",
-        tamanho: "pequeno",
-        fotos: numeradas(6)   // <- AQUI: fotos em img/evento-09/
-    },
-    {
-        pasta: "evento-10",
-        titulo: "Eventos Externos",
-        data: "",
-        frase: "",
-        cor: "azul",
-        tamanho: "pequeno",
-        fotos: numeradas(6)   // <- AQUI: fotos em img/evento-10/
-    },
-    {
-        pasta: "evento-11",
-        titulo: "Festivais de Férias",
-        data: "",
-        frase: "",
-        cor: "verde",
         tamanho: "medio",
-        fotos: numeradas(6)   // <- AQUI: fotos em img/evento-11/
+        fotos: [
+            { arquivo: "foto-01.jpg", legenda: " ", orientacao: "vertical" },
+            { arquivo: "foto-02.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-03.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-04.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-05.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-06.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-07.jpg", legenda: " ", orientacao: "horizontal" },
+            { arquivo: "foto-08.jpg", legenda: " ", orientacao: "horizontal" }
+        ]
     }
 
     /* PARA ADICIONAR UM NOVO EVENTO:
