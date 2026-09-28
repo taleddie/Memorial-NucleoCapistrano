@@ -1,119 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="website icon" type="png" href="./img/icon.png">
     <title>Memorial - CAPISTRANO</title>
-
-    <!-- inter -->
+    <link rel="icon" type="image/png" href="./img/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <linkhref="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400..700;1,400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <!-- monsieur  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
-
-    <!-- allura  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
-    <section class="headerCont">
+    <a class="pular" href="#eventos">Ir para os momentos</a>
 
-        <header class="header">
-            <a href="" class="logo"></a>
-            <ul class="textCont">
-                <li class="text"> <a href="https://www.instagram.com/iee.nucleoscapistrano_itaimpta/"><img src="img/insta.png" alt="Instagram"></a></li>
-            </ul>
-        </header>
+    <header class="topo">
+        <a class="topo-insta" href="https://www.instagram.com/iee.nucleoscapistrano_itaimpta/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Núcleo Capistrano (abre em nova aba)">
+            <img src="img/insta.png" alt="">
+        </a>
+    </header>
 
-    </section>
+    <main>
 
-    <section class="titleCont">
-        <h1 class="title1">Memorial</h1>
-        <h1 class="title2">NÚCLEO CAPISTRANO</h1>
-        <img src="img/icon.png" alt="">
-    </section>
+        <section class="hero">
+            <img class="hero-logo" src="img/icon.png" alt="">
+            <h1 class="hero-titulo">
+                <span class="hero-memorial">Memorial</span>
+                <span class="hero-nucleo">NÚCLEO CAPISTRANO</span>
+            </h1>
+            <p class="hero-dica">Toque em um momento para ver as fotografias.</p>
+        </section>
 
-    <section class="conteudoCont">
-        <div class="conteudo1">
-            <p class="subtitle">
-                Passeios e Atividades Culturais
-            </p>
-            <img class="textoEscondido" src="./img/c1.png">
-        </div>
-        <div class="conteudo2">
-            <p class="subtitle">
-                Eventos Esportivos e Competições
-            </p>
-            <img class="textoEscondido" src="./img/c2.png">
-        </div>
-        <div class="conteudo3">
-            <p class="subtitle">
-                Confraternizações
-            </p>
-            <img class="textoEscondido" src="./img/c3.png">
-        </div>
-        <div class="conteudo4">
-            <p class="subtitle">
-                Amistosos
-            </p>
-            <img class="textoEscondido" src="./img/c4.png">
-        </div>
-        <div class="conteudo5">
-            <p class="subtitle">
-                Etapa Local - 2025
-            </p>
-            <img class="textoEscondido" src="./img/c5.png">
-        </div>
-        <div class="conteudo6">
-            <p class="subtitle">
-                Etapa Regional - 2025
-            </p>
-            <img class="textoEscondido" src="./img/c6.png">
-        </div>
-        <div class="conteudo7">
-            <p class="subtitle">
-                Etapa Local - 2024
-            </p>
-            <img class="textoEscondido" src="./img/c7.png">
-        </div>
-        <div class="conteudo8">
-            <p class="subtitle">
-                Etapa Reginal - 2024
-            </p>
-            <img class="textoEscondido" src="./img/c8.png">
-        </div>
+        <section id="eventos" class="eventos" aria-label="Momentos do memorial">
+            <div class="grade" id="grade"></div>
+            <noscript><p class="aviso-js">Ative o JavaScript do navegador para ver os momentos do memorial.</p></noscript>
+        </section>
 
-        <div class="conteudo9">
-            <p class="subtitle">
-                Etapa Final - 2024
-            </p>
-            <img class="textoEscondido" src="./img/c9.png">
-        </div>
-        <div class="conteudo10">
-            <p class="subtitle">
-                Eventos Externos
-            </p>
-            <img class="textoEscondido" src="./img/c10.png">
-        </div>
-        <div class="conteudo11">
-            <p class="subtitle">
-                Festivais de Férias
-            </p>
-            <img class="textoEscondido" src="./img/c11.png">
-        </div>
-
-    </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-container">
@@ -122,10 +48,9 @@
         </div>
     </footer>
 
+    <!-- dados e componente -->
+    <script src="eventos.js"></script>
     <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
